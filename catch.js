@@ -1,13 +1,29 @@
+/*
+    Written by Quazi Yasin Billah
+    2019 ©
+    https://yasin.design/
+*/
+
+//Request variables
+
 var request = require("request");
 var request2 = require("request");
 var cheerio = require("cheerio");
 var cheerio2 = require("cheerio");
 
+//Url for Archillect
 var url = "https://archillect.com/archive";
 
+//Links to full resolution images from Archillect
 var fullImgLink = [];
 
+//Image Downloader (Node)
 const download = require('image-downloader');
+
+/*
+    First request is to gather post links for all the archive thumbnails.
+    Second request opens each individual post and downloads them into a given directory.
+*/
 
 request(url , function(err , response , html){
     if(!err){
@@ -30,7 +46,7 @@ request(url , function(err , response , html){
                         var temp = fullImgLink[img];
                         const options = {
                             url: temp,
-                            dest: "/Users/qbillah/Downloads"
+                            dest: "" //Change this to whatever directory you want the images to be downloaded in
                         }
                         async function downloadIMG(){
                             try{
