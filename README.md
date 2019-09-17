@@ -14,4 +14,12 @@ To run the program just type the following into terminal
 node catch.js
 ```
 
+*Make sure to change the download directory to download all the images from the Archillect Archive*
+```
+const options = {
+  url: temp,
+  dest: "/MY/DIRECTORY/FOR/DOWNLOADS/"
+}
+```
+
 Enjoy :)
