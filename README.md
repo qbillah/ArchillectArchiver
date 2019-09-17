@@ -6,6 +6,7 @@ Before running the program just install 'require' and 'cheerio' into the directo
 ```
 npm install require
 npm install cheerio
+npm install --save image-downloader
 ```
 
 To run the program just type the following into terminal
