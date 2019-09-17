@@ -8,4 +8,9 @@ npm install require
 npm install cheerio
 ```
 
+To run the program just type the following into terminal
+```
+node catch.js
+```
+
 Enjoy :)
